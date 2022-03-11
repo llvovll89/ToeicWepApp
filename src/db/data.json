@@ -1,0 +1,72 @@
+{
+  "days": [
+    { "id": 1, "day": 1 },
+    { "id": 2, "day": 2 },
+    { "id": 3, "day": 3 }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "eng": "effect",
+      "kor": "결과",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "eng": "apple",
+      "kor": "사과",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 2,
+      "eng": "banana",
+      "kor": "바나나",
+      "isDone": false
+    },
+    {
+      "id": 5,
+      "day": 2,
+      "eng": "culture",
+      "kor": "문화,교양",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "day": 3,
+      "eng": "symbol",
+      "kor": "상징",
+      "isDone": false
+    },
+    {
+      "id": 7,
+      "day": 3,
+      "eng": "liberty",
+      "kor": "자유",
+      "isDone": false
+    },
+    {
+      "id": 8,
+      "day": 3,
+      "eng": "triumph",
+      "kor": "승리",
+      "isDone": false
+    },
+    {
+      "id": 9,
+      "day": 3,
+      "eng": "unity",
+      "kor": "통일/일치",
+      "isDone": false
+    }
+  ]
+}
