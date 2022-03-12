@@ -7,7 +7,9 @@ export default function Header() {
           <Link to="/"> Toeic 영단어(Home)</Link>
         </h1>
         <div className="btn">
+          <Link to="/create_word">
           <button className="link">단어 추가</button>
+          </Link>
           <button className="link">Day 추가</button>
       </div>
       </div>

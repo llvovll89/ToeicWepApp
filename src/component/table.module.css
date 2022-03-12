@@ -1,0 +1,19 @@
+.tb_container {
+    width: 700px;
+}
+
+.tb_container td {
+    width: 240px;
+}
+
+@media (max-width: 564px) {
+    .tb_container {
+        width: 450px;
+    }
+    .tb_container td:last-child {
+        width: 120px;
+    }
+    td button {
+        margin: 5px 0;
+    }
+}

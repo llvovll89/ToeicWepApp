@@ -1,26 +1,37 @@
-import dummy from "../db/data.json";
 import { useParams } from "react-router-dom";
-import BackBtn from "./backBtn";
+// import BackBtn from "./backBtn";
+import Word from "./Word";
+import Styles from "./table.module.css";
+// import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
 
 export default function Day() {
-  // dummy.words
-  const day = useParams().day;
-  const wordList = dummy.words.filter((word) => word.day === Number(day));
+  const { day } = useParams();
+  // const [words, setWords] = useState([]);
+
+  // useEffect(() => {
+  //   fetch(`http://localhost:3001/words?day=${day}`)
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       setWords(data);
+  //     });
+  // }, [day]);
+
+  const words = useFetch(`http://localhost:3001/words?day=${day}`);
 
   return (
     <>
       <h2 className="day_title">Day {day}</h2>
-      <table>
+      <table className={Styles.tb_container}>
         <tbody>
-          {wordList.map((word) => (
-            <tr key={word.id}>
-              <td>{word.eng}</td>
-              <td>{word.kor}</td>
-            </tr>
+          {words.map((word) => (
+            <Word word={word} key={word.id} />
           ))}
         </tbody>
       </table>
-      <BackBtn />
+      {/* <BackBtn /> */}
     </>
   );
 }
