@@ -8,10 +8,12 @@ export default function Header() {
         </h1>
         <div className="btn">
           <Link to="/create_word">
-          <button className="link">단어 추가</button>
+            <button className="link">단어 추가</button>
           </Link>
-          <button className="link">Day 추가</button>
-      </div>
+          <Link to="/create_day">
+            <button className="link">Day 추가</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

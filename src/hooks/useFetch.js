@@ -5,10 +5,10 @@ export default function useFetch(url) {
 
   useEffect(() => {
     fetch(url)
-      .then((res) => {
+      .then(res => {
         return res.json();
       })
-      .then((data) => {
+      .then(data => {
         setData(data);
       });
   }, [url]);
