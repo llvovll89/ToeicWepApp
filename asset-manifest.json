@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ToeicWepApp/static/css/main.cb494359.css",
+    "main.js": "/ToeicWepApp/static/js/main.ef4453e3.js",
+    "index.html": "/ToeicWepApp/index.html",
+    "main.cb494359.css.map": "/ToeicWepApp/static/css/main.cb494359.css.map",
+    "main.ef4453e3.js.map": "/ToeicWepApp/static/js/main.ef4453e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb494359.css",
+    "static/js/main.ef4453e3.js"
+  ]
+}
